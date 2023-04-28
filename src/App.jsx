@@ -1,12 +1,15 @@
-import "./App.css";
-import Icon from "../public/icon.svg";
+// Libraries
+import { Box } from "@mui/material";
+import { Outlet } from "react-router-dom";
+// Components
+import Navbar from "./components/navbar/Navbar";
 
 function App() {
   return (
-    <div>
-      <h1>Crypto App</h1>
-      <img src={Icon} alt="icon" width="200"/>
-    </div>
+    <Box>
+      <Navbar />
+      <Outlet />
+    </Box>
   );
 }
 
