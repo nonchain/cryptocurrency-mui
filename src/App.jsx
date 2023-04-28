@@ -20,12 +20,14 @@ function App() {
   // );
 
   const theme = useMemo(() => createTheme(customTheme(mode)), [mode]);
-  
+
   return (
     <ThemeProvider theme={theme}>
       <Box>
         <Navbar />
-        <Outlet />
+        <Box padding="5rem 4.5rem 1rem">
+          <Outlet />
+        </Box>
       </Box>
     </ThemeProvider>
   );
