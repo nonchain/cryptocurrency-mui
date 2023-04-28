@@ -25,7 +25,7 @@ function App() {
     <ThemeProvider theme={theme}>
       <Box>
         <Navbar />
-        <Box padding="5rem 4.5rem 1rem">
+        <Box minHeight="100vh" bgcolor="background" padding="5rem 4.5rem 1rem">
           <Outlet />
         </Box>
       </Box>
