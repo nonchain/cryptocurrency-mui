@@ -12,10 +12,7 @@ const router = createBrowserRouter([
     path: "/",
     element: <App />,
     children: [
-      {
-        path: "/",
-        element: <div>Home</div>,
-      },
+      { index: true, element: <div>Home</div> },
       {
         path: "/currencies",
         element: <div>All Currencies page</div>,
