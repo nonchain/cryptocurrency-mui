@@ -1,5 +1,5 @@
 // Libraries
-import { AppBar, Box, Stack, Toolbar, Typography } from "@mui/material";
+import { AppBar, Box, Stack, Toolbar, Typography, Switch } from "@mui/material";
 import { Link } from "react-router-dom";
 // Files
 import Logo from "../../../public/icon.svg";
@@ -38,6 +38,9 @@ function Navbar() {
                 fontSize: "1rem"
               }}>News</Typography>
             </Link>  
+            <Box>
+              <Switch variant="dark-mode" />
+            </Box>
           </Stack>
         </Stack>
       </Toolbar>
