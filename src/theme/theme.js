@@ -3,15 +3,38 @@ export const customTheme = (mode) => ({
     mode,
     ...(mode === "light"
       ? {
-          background: "#fafffa",
+          logo: "invert(0%) sepia(6%) saturate(1485%) hue-rotate(13deg) brightness(77%) contrast(82%)",
+          background: "#FAFFFA",
           title: "#171717",
           text: {
             100: "#565857",
             200: "#686867",
           },
+          white: "#FFF",
+          black: "#111",
+          primary: {
+            100: "#F0F2FC",
+            200: "#D7DCFC",
+            300: "#B2BEFF",
+            400: "#667DFF",
+            500: "#4963F2",
+            600: "#364DCC",
+            700: "#2438A6",
+            800: "#152373",
+            900: "#08124D",
+          },
         }
       : {
           // dark mode
+          logo: "invert(99%) sepia(4%) saturate(346%) hue-rotate(145deg) brightness(115%) contrast(100%)",
+          background: "#2f2f2f",
+          title: "#FAFAFA",
+          text: {
+            100: "#565857",
+            200: "#686867",
+          },
+          white: "#111",
+          black: "#FFF",
         }),
   },
   components: {
