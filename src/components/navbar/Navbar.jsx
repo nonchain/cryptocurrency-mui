@@ -2,16 +2,16 @@
 import { AppBar, Box, Stack, Toolbar, Typography, Switch } from "@mui/material";
 import { Link } from "react-router-dom";
 // Files
-import Logo from "../../../public/icon.svg";
+import Logo from "../logo/Logo";
 
 function Navbar() {
   return (
-    <AppBar>
+    <AppBar sx={{ backgroundColor: "white"}}>
       <Toolbar>
         <Stack width="100%" direction="row" alignItems="center" justifyContent="space-between">
           <Link to="/" replace>
             <Stack direction="row" alignItems="center" gap="0.75rem">
-              <Box component="img" src={Logo} alt="Logo" width={32}/>
+              <Logo width={32} height={32}/>
               <Typography component="h2" sx={{
                 color: "title",
                 fontSize: "1.75rem",
